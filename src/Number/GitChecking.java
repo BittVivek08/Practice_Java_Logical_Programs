@@ -7,7 +7,7 @@ public class GitChecking {
 		
 		System.out.println("Bittu Vivek");
 		
-		int x = 69;
+		int x = 12;
 		
 		System.out.println(x);
 
