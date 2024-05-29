@@ -1,4 +1,4 @@
-package Number;
+package number;
 
 public class GitChecking {
 
