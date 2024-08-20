@@ -8,11 +8,11 @@ public class CountPunctuation {
 		
 		String str = "Bittu Vivek";
 		
-		String str1 = str.toLowerCase();
+		str = str.toLowerCase();
 		
-		for(int i = 0; i < str1.length(); i++) {
+		for(int i = 0; i < str.length(); i++) {
 			
-			if(str1.charAt(i) == 'v') {
+			if(str.charAt(i) == 'v') {
 				count++;
 			}
 		}

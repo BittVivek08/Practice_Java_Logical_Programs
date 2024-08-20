@@ -17,7 +17,8 @@ public class DuplicateCharInString {
 			String word = str.toLowerCase();
 
 			List<String> result = Arrays.stream(word.split(""))
-					.collect(Collectors.groupingBy(Function.identity(), Collectors.counting())).entrySet().stream()
+					.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+					.entrySet().stream()
 					.filter(x -> x.getValue() > 1).map(Map.Entry::getKey).collect(Collectors.toList());
 
 			System.out.println("Duplicate Characters In Your Word Are : " + result);

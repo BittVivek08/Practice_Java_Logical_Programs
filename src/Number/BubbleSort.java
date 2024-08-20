@@ -4,20 +4,24 @@ public class BubbleSort {
 
 	public static void main(String[] args) {
 
-		int[] array = {5,9,1,6};
+		int[] array = {15,9,11,26};
 		
 		for(int i = 0; i < array.length; i++) {
-			for(int j = 1; j < array.length - 1; j++) {
-				if(array[i] > array[j]) {
-					int temp = array[i];
+			for(int j = 0; j < array.length - 1; j++) {
+				if(array[j] > array[j + 1]) {
+					int temp = array[j];
 					
-					array[i] = array[j];
-					array[j] = temp;
+					array[j] = array[j + 1];
+					array[j + 1] = temp;
 				}
 			}
 		
 		}
-		System.out.println();
+		System.out.println("The Sorted Array :: ");
+		for(int i = 0; i < array.length; i++) {
+			System.out.println(array[i] + " ");
+		}
+		
 	}
 
 }

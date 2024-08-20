@@ -23,7 +23,7 @@ public class RemoveDuplicatesFromSortedArray {
 		int k = removeDuplicateFromSortedArray(nums);
 		
 		System.out.println("Output : " + k + ", nums = [ " + nums[0] + "," + nums[1] + 
-				(k > 2 ? "," + nums[2] : "") + ",_]");
+				(k > 2 ? "," + nums[2] : "") + "]");
 
 	}
 

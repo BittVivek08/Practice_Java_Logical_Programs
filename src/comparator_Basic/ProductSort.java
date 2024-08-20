@@ -8,19 +8,27 @@ public class ProductSort {
 
 	public static void main(String[] args) {
 		
-		List<Product> product = new ArrayList<>();
+		List<Product> product = new ArrayList<>();	
 		
 		product.add(new Product(11, "Zebronics Mouse", 699.75));
 		product.add(new Product(12, "Asus Laptop", 50000.25));
 		product.add(new Product(13, "Redmi Mobile", 25458.375));
 		product.add(new Product(14, "Realme Smart Watch", 1879.45));
 		
-	    System.out.println("Sorting On the basis of name of the product.....");
+	   // System.out.println("Sorting On the basis of name of the product.....");
+	    System.out.println("Sorting on the basis of price of the prodduct....");
 	    System.out.println();
 	    
-	    Collections.sort(product,(p1,p2)-> {
-	    	return p1.name.compareTo(p2.name);
+		
+		// Collections.sort(product,(p1,p2)-> { 
+		//	 return p1.name.compareTo(p2.name); });
+		 
+	    
+	    Collections.sort(product, (p1,p2)-> { 
+	    	return Double.compare(p1.price, p2.price);
 	    });
+	    
+	    
 	    
 	    for(Product p : product) {
 	    	

@@ -8,7 +8,7 @@ public class TwoSum {
 	public static void main(String[] args) {
 		
 		int[] nums1 = {3,8,4,9};
-		int target = 13;
+		int target = 17;
 		
 		int[] result = twoSum(nums1, target);
 		System.out.println("Output: [" + result[0] + "," + result[1] + "]");
