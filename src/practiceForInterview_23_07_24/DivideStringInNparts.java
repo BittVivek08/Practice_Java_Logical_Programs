@@ -17,7 +17,7 @@ public class DivideStringInNparts {
 		String[] equalStr = new String[n];
 		
 		if(len % n != 0) {
-			System.out.println("The given string can not divide into " + n + "equal parts");
+			System.out.println("The given string can not divide into " + n + " equal parts");
 		}
 		
 		else {

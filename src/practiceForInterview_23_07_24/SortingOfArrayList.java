@@ -39,7 +39,8 @@ public class SortingOfArrayList {
 					  swapped = true;
 				  }
 			  }
-			  if(!swapped) break;
+			  if(!swapped) 
+				  break;
 		  }
 	  }
 
